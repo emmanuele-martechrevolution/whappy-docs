@@ -1,6 +1,3 @@
-### `user.md`
-
-````markdown
 # Documentazione User Store
 
 Il User Store gestisce i dati relativi all'utente, inclusa la richiesta delle informazioni dell'utente dall'API.
@@ -31,4 +28,3 @@ const userStore = useUserStore();
 userStore.fetchUser();
 console.log(userStore.user); // Dati dell'utente
 ```
-````
