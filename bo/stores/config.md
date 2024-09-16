@@ -1,6 +1,3 @@
-### `config.md`
-
-````markdown
 # Documentazione Config Store
 
 Il Config Store fornisce dettagli di configurazione, inclusi gli URL API basati sulla compagnia corrente.
@@ -35,4 +32,3 @@ const configStore = useConfigStore();
 configStore.setCurrentCompany("DEMO");
 console.log(configStore.getApiUrl); // https://api-demo.whappy.it/api/
 ```
-````
