@@ -1,37 +1,37 @@
-# Auth Store Documentation
+# Documentazione Auth Store
 
-The Auth Store is responsible for managing the authentication state of the user.
+L'Auth Store è responsabile della gestione dello stato di autenticazione dell'utente.
 
-## Store Definition
+## Definizione dello Store
 
-**Location:** `src/stores/auth.js`
+**Posizione:** `src/stores/auth.js`
 
-### State
+### Stato
 
-- **token:** A `ref` holding the authentication token, retrieved from `localStorage` if available.
-- **status:** A `ref` holding the status of the authentication (e.g., success, error).
-- **hasLoadedOnce:** A `ref` indicating whether the store has been loaded at least once.
+- **token:** Un `ref` che contiene il token di autenticazione, recuperato da `localStorage` se disponibile.
+- **status:** Un `ref` che contiene lo stato dell'autenticazione (ad es. successo, errore).
+- **hasLoadedOnce:** Un `ref` che indica se lo store è stato caricato almeno una volta.
 
 ### Getters
 
-- **isAuthenticated:** A `computed` property that returns `true` if the `token` is not empty.
-- **authStatus:** A `computed` property that returns the current authentication status.
+- **isAuthenticated:** Una proprietà `computed` che restituisce `true` se il `token` non è vuoto.
+- **authStatus:** Una proprietà `computed` che restituisce lo stato corrente dell'autenticazione.
 
-### Actions
+### Azioni
 
-- **setToken(newToken):** Sets a new authentication token and updates `localStorage` and `axios` headers.
-- **setStatus(newStatus):** Updates the authentication status.
-- **setHasLoadedOnce(loaded):** Updates the `hasLoadedOnce` state.
-- **logout():** Clears the token, status, and `hasLoadedOnce` state, removes the token from `localStorage`, and deletes the `Authorization` header from `axios`.
+- **setToken(newToken):** Imposta un nuovo token di autenticazione e aggiorna `localStorage` e le intestazioni di `axios`.
+- **setStatus(newStatus):** Aggiorna lo stato di autenticazione.
+- **setHasLoadedOnce(loaded):** Aggiorna lo stato di `hasLoadedOnce`.
+- **logout():** Cancella il token, lo stato e `hasLoadedOnce`, rimuove il token da `localStorage` e elimina l'intestazione `Authorization` da `axios`.
 
-### Usage
+### Utilizzo
 
-To use the Auth Store:
+Per utilizzare l'Auth Store:
 
 ```javascript
 import { useAuthStore } from "@/stores/auth";
 
 const authStore = useAuthStore();
-authStore.setToken("new-token");
-console.log(authStore.isAuthenticated); // true or false
+authStore.setToken("nuovo-token");
+console.log(authStore.isAuthenticated); // true o false
 ```

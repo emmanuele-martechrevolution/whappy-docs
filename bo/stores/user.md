@@ -1,34 +1,34 @@
 ### `user.md`
 
 ````markdown
-# User Store Documentation
+# Documentazione User Store
 
-The User Store manages user-related data, including fetching user details from the API.
+Il User Store gestisce i dati relativi all'utente, inclusa la richiesta delle informazioni dell'utente dall'API.
 
-## Store Definition
+## Definizione dello Store
 
-**Location:** `src/stores/user.js`
+**Posizione:** `src/stores/user.js`
 
-### State
+### Stato
 
-- **status:** A `ref` holding the status of the user data fetching operation.
-- **user:** A `ref` holding the user data.
-- **loaded:** A `ref` indicating whether the user data has been loaded.
+- **status:** Un `ref` che contiene lo stato dell'operazione di richiesta dei dati dell'utente.
+- **user:** Un `ref` che contiene i dati dell'utente.
+- **loaded:** Un `ref` che indica se i dati dell'utente sono stati caricati.
 
-### Actions
+### Azioni
 
-- **fetchUser():** Fetches user data from the API and updates the `user` state. Logs out the user if an error occurs.
-- **resetUser():** Resets the user data and status.
+- **fetchUser():** Richiede i dati dell'utente dall'API e aggiorna lo stato `user`. Effettua il logout dell'utente se si verifica un errore.
+- **resetUser():** Resetta i dati dell'utente e lo stato.
 
-### Usage
+### Utilizzo
 
-To use the User Store:
+Per utilizzare il User Store:
 
 ```javascript
 import { useUserStore } from "@/stores/user";
 
 const userStore = useUserStore();
 userStore.fetchUser();
-console.log(userStore.user); // User data
+console.log(userStore.user); // Dati dell'utente
 ```
 ````

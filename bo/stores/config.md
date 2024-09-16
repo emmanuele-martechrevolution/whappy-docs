@@ -1,32 +1,32 @@
 ### `config.md`
 
 ````markdown
-# Config Store Documentation
+# Documentazione Config Store
 
-The Config Store provides configuration details, including API URLs based on the current company.
+Il Config Store fornisce dettagli di configurazione, inclusi gli URL API basati sulla compagnia corrente.
 
-## Store Definition
+## Definizione dello Store
 
-**Location:** `src/stores/config.js`
+**Posizione:** `src/stores/config.js`
 
-### State
+### Stato
 
-- **API_URL:** An object containing base URLs for various companies.
-- **currentCompany:** A `ref` holding the current company name.
+- **API_URL:** Un oggetto contenente URL base per varie compagnie.
+- **currentCompany:** Un `ref` che contiene il nome della compagnia corrente.
 
 ### Getters
 
-- **getApiUrl:** A `computed` property that returns the base URL for API requests based on the `currentCompany`.
-- **getSettingAddress:** A `computed` property that returns the URL for the settings API endpoint.
-- **getDriveAddress:** A `computed` property that returns the URL for the drive API endpoint.
+- **getApiUrl:** Una proprietà `computed` che restituisce l'URL base per le richieste API in base alla `currentCompany`.
+- **getSettingAddress:** Una proprietà `computed` che restituisce l'URL per l'endpoint API delle impostazioni.
+- **getDriveAddress:** Una proprietà `computed` che restituisce l'URL per l'endpoint API del drive.
 
-### Actions
+### Azioni
 
-- **setCurrentCompany(company):** Sets the current company and updates the URLs accordingly.
+- **setCurrentCompany(company):** Imposta la compagnia corrente e aggiorna gli URL di conseguenza.
 
-### Usage
+### Utilizzo
 
-To use the Config Store:
+Per utilizzare il Config Store:
 
 ```javascript
 import { useConfigStore } from "@/stores/config";
