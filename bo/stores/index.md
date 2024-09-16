@@ -1,32 +1,32 @@
-# Pinia Stores Documentation
+# Documentazione degli Store Pinia
 
-In this project, we use Pinia as our state management library for Vue 3. This document provides an overview of the Pinia stores used in the application.
+In questo progetto utilizziamo Pinia come libreria di gestione dello stato per Vue 3. Questo documento fornisce una panoramica sugli store Pinia utilizzati nell'applicazione.
 
-## Stores Overview
+## Panoramica degli Store
 
-We have the following Pinia stores:
+Abbiamo i seguenti store Pinia:
 
 1. **Auth Store** (`auth`)
 2. **Config Store** (`config`)
 3. **User Store** (`user`)
 
-Each store is responsible for managing specific parts of the application's state and providing necessary actions and getters for state management.
+Ogni store è responsabile della gestione di specifiche parti dello stato dell'applicazione e fornisce le azioni e i getter necessari per la gestione dello stato.
 
 ---
 
 ### Auth Store
 
-- **Location:** `src/stores/auth.js`
-- **Purpose:** Manages authentication state, including token handling and user login/logout functionality.
+- **Posizione:** `src/stores/auth.js`
+- **Scopo:** Gestisce lo stato di autenticazione, inclusa la gestione dei token e le funzionalità di login/logout dell'utente.
 
 ### Config Store
 
-- **Location:** `src/stores/config.js`
-- **Purpose:** Provides configuration details such as API URLs based on the current company.
+- **Posizione:** `src/stores/config.js`
+- **Scopo:** Fornisce dettagli di configurazione come URL API basati sulla compagnia corrente.
 
 ### User Store
 
-- **Location:** `src/stores/user.js`
-- **Purpose:** Manages user data, including fetching user information from the API and resetting user state.
+- **Posizione:** `src/stores/user.js`
+- **Scopo:** Gestisce i dati dell'utente, inclusa la richiesta delle informazioni dell'utente dall'API e il reset dello stato dell'utente.
 
-For detailed documentation on each store, refer to the individual store documentation files.
+Per una documentazione dettagliata su ciascuno store, fare riferimento ai file di documentazione specifici.
